@@ -20,7 +20,7 @@
             <div class="form-group">
 
               <label for="contrasenia"> <i class="fas fa-unlock-alt"></i> Contraseña:</label>
-              <input type="password" class="form-control" id="contrasenia" name="contrasenia" required = "" autocomplete="off">
+              <input type="password" class="form-control" id="contrasenia" name="contrasenia" required = "" autocomplete="off" placeholder="Ingresa tú contraseña">
 
             </div>
           </form>

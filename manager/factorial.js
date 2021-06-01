@@ -1,9 +1,5 @@
 $(document).ready(() => {
 
-  $('#btn_limpiar').click(() => {
-    $('#numero_factorial').val('');
-  });
-
   $('#btn_calcular').click(() => {
 
     if ($('#numero_factorial').val() == '') {
@@ -32,8 +28,6 @@ $(document).ready(() => {
 
       proceso = proceso.substring(0, proceso.length - 2).trim();
 
-      alert(numero_fact)
-
       $.ajax({
         type: 'POST',
         url: '../control/factorial.php',
@@ -43,7 +37,6 @@ $(document).ready(() => {
           'num_factorial': numero_fact
         },
         success: resultado => {
-          console.log(resultado)
           if (resultado == 1) {
             swal({
               icon: 'success',
@@ -52,6 +45,7 @@ $(document).ready(() => {
             });
 
             $('#tabla_historial').load('tabla_factorial.php');
+            $('#numero_factorial').val('');
 
           } else {
             console.log(resultado);

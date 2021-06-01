@@ -90,7 +90,6 @@ if (isset($_SESSION['usuario'])) {
               <div class="btn btn-group-lg">
 
                 <span class="btn btn-success" id="btn_calcular">Calcular</span>
-                <span class="btn btn-info" id="btn_limpiar">Limpiar</span>
 
               </div>
             </div>
@@ -101,7 +100,7 @@ if (isset($_SESSION['usuario'])) {
             <div class="card-body">
               <h3 class="card-title text-center">Historial</h3>
               <div>
-                <table class="table table-responsive text-center table-striped table-borderless table-white">
+                <table class="table table-responsive-sm text-center table-striped table-borderless table-white">
                   <thead>
                     <tr>
                       <th>Num.Registros</th>
